@@ -1,0 +1,3 @@
+# The vendor directory is ignored so I can put things like the noip tar file
+# in there, and the no-ip2.conf file in there which contains my credentials
+/vendor
