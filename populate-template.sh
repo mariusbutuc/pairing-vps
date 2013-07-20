@@ -20,7 +20,7 @@ ssh-keygen -R "$ip_addr"
 scp -o StrictHostKeyChecking=no $vendor_dir/noip-duc-linux.tar.gz $remote:
 scp $vendor_dir/no-ip2.conf $remote:
 
-for f in install-packages.sh install-users.sh install-noip.sh; do
+for f in install-packages.sh install-github-auth.sh install-users.sh install-noip.sh; do
   scp $f $remote:
   ssh $remote chmod +x $f
   ssh $remote ./$f
