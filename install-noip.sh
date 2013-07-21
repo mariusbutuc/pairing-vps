@@ -20,6 +20,7 @@ if [ ! -d /usr/local/bin ]; then mkdir -p /usr/local/bin;fi
 if [ ! -d /usr/local/etc ]; then mkdir -p /usr/local/etc;fi
 cp noip2 /usr/local/bin/noip2
 mv $no_ip_path/no-ip2.conf /usr/local/etc
+chown root.root /usr/local/etc/no-ip2.conf
 chmod 600 /usr/local/etc/no-ip2.conf
 
 cp redhat.noip.sh /etc/rc.d/init.d/noip
