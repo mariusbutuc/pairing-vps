@@ -2,6 +2,7 @@
 
 set -e
 
+echo "Installing and configuring noip service"
 no_ip_path=/vagrant/no-ip
 build_dir=noip-build
 

@@ -9,4 +9,5 @@
 
 set -e
 
+echo "Installing github-auth gem"
 gem install github-auth

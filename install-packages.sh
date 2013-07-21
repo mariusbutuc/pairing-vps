@@ -10,5 +10,5 @@ yum clean all
 echo "Installing development tools"
 yum groupinstall -y -q "Development Tools"
 echo "Installing additional RPMs"
-yum install -y -q tmux git vim ruby ruby-devel rubygems
+yum install -y -q tmux vim ruby ruby-devel rubygems
 
