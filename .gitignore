@@ -1,3 +1,10 @@
-# The vendor directory is ignored so I can put things like the noip tar file
-# in there, and the no-ip2.conf file in there which contains my credentials
-/vendor
+# no-ip contains the no-ip2 tar file, and a configuration file I cooked
+# previously. As this is credentials and someone elses code you can get
+# from http://www.noip.com/client/linux/noip-duc-linux.tar.gz it is not
+# under version control.
+/no-ip
+# The digital-ocean-credentials.rb file should be copied from the template
+# in digital-ocean-credentials.sample and adjusted to your needs.
+/digital-ocean-credentials.rb
+
+/.vagrant

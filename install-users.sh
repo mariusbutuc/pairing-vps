@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "Adding mike user"
 useradd -c "Mike Stok" mike
 mkdir ~mike/.ssh
 cp ~root/.ssh/authorized_keys ~mike/.ssh
@@ -7,6 +8,7 @@ chown -R mike.mike ~mike/.ssh
 chmod 755 ~mike/.ssh
 chmod 644 ~mike/.ssh/authorized_keys
 
+echo "Adding pair user"
 useradd -c "Pairing Partner" pair
 mkdir ~pair/.ssh
 cp ~root/.ssh/authorized_keys ~pair/.ssh
