@@ -1,6 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+Vagrant.require_plugin('vagrant-digitalocean')
 require './digital-ocean-credentials.rb'
 
 Vagrant.configure('2') do |config|
