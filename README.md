@@ -57,10 +57,9 @@ If you aren't using `no-ip` then comment out the following line in the
 #### Vagrant Plug-in Installation
 
 Look at https://github.com/smdahlen/vagrant-digitalocean for background, the
-essential steps are:
+essential step is:
 
-* `vagrant plugin install vagrant-digitalocean`
-* `vagrant box add digital_ocean https://github.com/smdahlen/vagrant-digitalocean/raw/master/box/digital_ocean.box`
+    vagrant plugin install vagrant-digitalocean
 
 ### Build the Template Machine
 
