@@ -1,40 +1,33 @@
 ## Overview
 
-This contains the recipes to build up a Digital Ocean droplet from sctatch
+This contains the recipes to build up a Digital Ocean droplet from scratch
 so that it can be used for remote pair programming.
 
-The goal was to make a cheap system, so I could store images in Digital Ocean
-and delete the actual droplets until they are needed. The down-side to this
-is that it can take 10 to 15 minutes to create and destroy a virtual private
-server.
-
-The plan is to create a basic sharing environment template which can be
-instantiated and then customized to each pairing project.
+  * **The goal:** make a cheap system, so we can store images in Digital Ocean
+    and delete the actual droplets until they are needed.
+  * **The downside**: it can take 10 to 15 minutes to create and destroy a
+    virtual private server.
+  * **The plan**: create a basic sharing environment template which can be
+    instantiated and then customized to each pairing project.
 
 ## Template Creation
 
 ### Prerequisites
 
-#### Vagrant - http://www.vagrantup.com
+  1. [**Vagrant**](http://www.vagrantup.com)
+    * This needs to be installed on the host you work on as it is used to build
+      the droplet.
 
-This needs to be installed on the host you work on as it is used to build the
-droplet.
+  2. [**Digital Ocean**](http://www.digitalocean.com)
+    * Sign up for a Digital Ocean account.
 
-#### http://www.digitalocean.com
-
-Sign up for a Digital Ocean account.
-
-### Nice to Have
-
-As the scripts are set up they expect a no-ip account to be set up.
-
-#### Free DNS http://www.noip.com
-
-Sign up for noip.
-
-Download the no-ip client from http://www.noip.com/client/linux/noip-duc-linux.tar.gz
-into the `no-ip` directory, and if necessary create a config file by setting it
-up in a local VM and creating the config file as part of `make install`.
+  3. [**No-IP**: Free DDNS](http://www.noip.com) _(nice to have)_  
+    As the scripts are currently set up, they expect a no-ip account to be set up.
+    * Sign up for noip.
+    * [Download the no-ip client](http://www.noip.com/client/linux/noip-duc-linux.tar.gz)
+      into the `no-ip` directory, and if necessary create a config file by
+      setting it up in a local VM and creating the config file as part of
+      `make install`.
 
 ### Process to Build the Template
 
